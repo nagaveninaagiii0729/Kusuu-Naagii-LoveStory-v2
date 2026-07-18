@@ -1,0 +1,563 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   CLASSROOM CINEMATIC STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body.classroom-page{
+
+    background:#0b1020;
+    color:white;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+
+}
+
+
+
+
+/* =========================
+   BACKGROUND
+========================= */
+
+
+.classroom-bg{
+
+    position:fixed;
+    inset:0;
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.75)
+    ),
+
+    url("../images/backgrounds/classroom.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    z-index:-5;
+
+}
+
+
+
+.sun-rays{
+
+    position:absolute;
+
+    top:0;
+    right:10%;
+
+    width:400px;
+    height:100%;
+
+
+    background:
+
+    linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,230,160,.35)
+    );
+
+
+    filter:blur(30px);
+
+    animation:sunMove 8s infinite;
+
+}
+
+
+
+
+.dust{
+
+    position:absolute;
+    inset:0;
+
+    background-image:
+
+    radial-gradient(
+    white 1px,
+    transparent 1px
+    );
+
+    background-size:90px 90px;
+
+    opacity:.25;
+
+    animation:dustMove 20s linear infinite;
+
+}
+
+
+
+
+
+/* =========================
+      SECTIONS
+========================= */
+
+
+section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+
+
+
+/* =========================
+      OPENING
+========================= */
+
+
+.year{
+
+    font-size:100px;
+
+    font-family:'Playfair Display',serif;
+
+    letter-spacing:15px;
+
+    animation:fadeIn 3s;
+
+}
+
+
+
+.opening-scene h2{
+
+    font-size:60px;
+
+    color:#ffd6e7;
+
+    font-family:'Great Vibes',cursive;
+
+}
+
+
+
+.opening-scene p{
+
+    margin-top:30px;
+
+    font-size:22px;
+
+    opacity:.8;
+
+}
+
+
+
+
+/* =========================
+      CLASSROOM
+========================= */
+
+
+.classroom-scene{
+
+    position:relative;
+
+}
+
+
+
+
+.board{
+
+    position:absolute;
+
+    top:80px;
+
+    background:#173b2a;
+
+    padding:30px 100px;
+
+    border-radius:10px;
+
+    font-size:30px;
+
+}
+
+
+
+.window{
+
+    position:absolute;
+
+    right:10%;
+
+    top:100px;
+
+    font-size:80px;
+
+}
+
+
+
+
+/* =========================
+      CHARACTERS
+========================= */
+
+
+.girl-character img,
+.boy-character img{
+
+
+    width:260px;
+
+    filter:
+
+    drop-shadow(
+    0 0 30px rgba(255,255,255,.3)
+    );
+
+
+}
+
+
+
+.girl-character{
+
+    position:absolute;
+
+    left:15%;
+
+    bottom:100px;
+
+    animation:
+
+    girlEnter 3s ease;
+
+}
+
+
+
+
+.boy-character{
+
+    position:absolute;
+
+    right:15%;
+
+    bottom:100px;
+
+    animation:
+
+    boyEnter 3s ease;
+
+}
+
+
+
+
+
+
+/* =========================
+      CAPTION
+========================= */
+
+
+.caption{
+
+    margin-top:350px;
+
+}
+
+
+
+.caption p{
+
+
+    font-size:35px;
+
+    font-family:'Playfair Display',serif;
+
+    color:#ffe1ed;
+
+
+}
+
+
+
+
+
+/* =========================
+      FIRST LOOK
+========================= */
+
+
+.look-text p{
+
+
+    font-size:35px;
+
+    margin:30px;
+
+    opacity:0;
+
+    animation:
+
+    textReveal 3s forwards;
+
+
+}
+
+
+
+.look-text p:nth-child(2){
+
+    animation-delay:2s;
+
+}
+
+
+.look-text p:nth-child(3){
+
+    animation-delay:4s;
+
+}
+
+
+
+
+.heart{
+
+    font-size:80px;
+
+    margin-top:50px;
+
+    animation:
+
+    heartbeat 1.5s infinite;
+
+}
+
+
+
+
+/* =========================
+      END
+========================= */
+
+
+.chapter-end h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:100px;
+
+}
+
+
+
+.chapter-end h2{
+
+    font-size:45px;
+
+    color:#ffd6e7;
+
+}
+
+
+
+#nextChapter{
+
+    margin-top:40px;
+
+    padding:18px 50px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ffb6d5;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+/* =========================
+      ANIMATIONS
+========================= */
+
+
+@keyframes girlEnter{
+
+from{
+
+transform:translateX(-300px);
+opacity:0;
+
+}
+
+to{
+
+transform:translateX(0);
+opacity:1;
+
+}
+
+}
+
+
+
+@keyframes boyEnter{
+
+from{
+
+transform:translateX(300px);
+opacity:0;
+
+}
+
+to{
+
+transform:translateX(0);
+opacity:1;
+
+}
+
+}
+
+
+
+@keyframes heartbeat{
+
+50%{
+
+transform:scale(1.25);
+
+}
+
+}
+
+
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+
+
+@keyframes textReveal{
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+
+
+@keyframes sunMove{
+
+50%{
+
+transform:translateX(-50px);
+
+}
+
+}
+
+
+
+@keyframes dustMove{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-200px);
+
+}
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+
+.year{
+
+font-size:60px;
+
+}
+
+
+.opening-scene h2{
+
+font-size:45px;
+
+}
+
+
+.girl-character img,
+.boy-character img{
+
+width:150px;
+
+}
+
+
+.caption p,
+.look-text p{
+
+font-size:22px;
+
+}
+
+
+}
