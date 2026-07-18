@@ -1,0 +1,263 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   CINEMATIC LOADING SCREEN
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+body.loading-page{
+
+    height:100vh;
+
+    overflow:hidden;
+
+    background:#07000f;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+
+
+.loading-page{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+
+.intro{
+
+
+    animation:
+
+    introFade 3s ease;
+
+}
+
+
+
+
+
+
+.heart{
+
+
+    font-size:120px;
+
+
+    animation:
+
+    heartBeat 1.5s infinite;
+
+
+}
+
+
+
+
+
+.intro h1{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:90px;
+
+
+    color:#ffd6e7;
+
+
+    text-shadow:
+
+
+    0 0 50px pink;
+
+
+}
+
+
+
+
+
+.intro p{
+
+
+    font-size:22px;
+
+
+    margin:20px;
+
+
+    color:#ffe5f0;
+
+
+}
+
+
+
+
+
+.loader{
+
+
+    width:180px;
+
+
+    height:5px;
+
+
+    background:#ffffff40;
+
+
+    border-radius:20px;
+
+
+    overflow:hidden;
+
+
+    margin:auto;
+
+
+}
+
+
+
+.loader::after{
+
+
+    content:"";
+
+
+    display:block;
+
+
+    width:50%;
+
+
+    height:100%;
+
+
+    background:#ffb6d5;
+
+
+    animation:
+
+    load 3s infinite;
+
+
+}
+
+
+
+
+
+
+
+@keyframes heartBeat{
+
+
+50%{
+
+transform:scale(1.2);
+
+}
+
+}
+
+
+
+
+@keyframes load{
+
+
+from{
+
+transform:translateX(-180px);
+
+}
+
+
+to{
+
+transform:translateX(180px);
+
+}
+
+}
+
+
+
+
+@keyframes introFade{
+
+
+from{
+
+opacity:0;
+
+transform:scale(.5);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.intro h1{
+
+font-size:60px;
+
+}
+
+
+.heart{
+
+font-size:80px;
+
+}
+
+
+}
