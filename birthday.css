@@ -1,0 +1,437 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   BIRTHDAY CINEMATIC STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body.birthday-page{
+
+    height:100vh;
+    overflow:hidden;
+
+    font-family:'Poppins',sans-serif;
+
+    color:white;
+
+    background:#120015;
+
+}
+
+
+
+
+
+/* BACKGROUND */
+
+.birthday-background{
+
+    position:fixed;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.4),
+    rgba(0,0,0,.85)
+    ),
+
+    radial-gradient(
+    circle at top,
+    #9b3b67,
+    #120015
+    );
+
+
+    z-index:-2;
+
+}
+
+
+
+.lights{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+
+    radial-gradient(
+    circle,
+    rgba(255,220,150,.8) 2px,
+    transparent 3px
+    );
+
+
+    background-size:70px 70px;
+
+
+    animation:
+
+    lightMove 8s linear infinite;
+
+}
+
+
+
+.confetti{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background-image:
+
+    radial-gradient(
+    #ffb6d5 2px,
+    transparent 3px
+    );
+
+
+    background-size:100px 100px;
+
+
+    animation:
+
+    confettiFall 12s linear infinite;
+
+}
+
+
+
+
+
+/* SCENE */
+
+.birthday-scene{
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+
+
+
+.birthday-scene h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:75px;
+
+    color:#ffd6e7;
+
+}
+
+
+
+.birthday-scene h2{
+
+    font-size:35px;
+
+    margin:15px;
+
+}
+
+
+
+
+
+/* GIFT */
+
+
+.gift-box{
+
+    margin:25px;
+
+    cursor:pointer;
+
+}
+
+
+
+.box{
+
+    font-size:100px;
+
+    animation:
+
+    giftShake 2s infinite;
+
+}
+
+
+
+.gift-box p{
+
+    font-size:20px;
+
+}
+
+
+
+
+
+/* SHIRT */
+
+
+.shirt-reveal img{
+
+    width:160px;
+
+    opacity:0;
+
+    transform:scale(.5);
+
+
+    animation:
+
+    revealGift 2s forwards;
+
+    animation-delay:2s;
+
+}
+
+
+
+.shirt-reveal p{
+
+    font-size:25px;
+
+    color:#ffe1ee;
+
+}
+
+
+
+
+
+/* MEMORY TEXT */
+
+
+.memory-text p{
+
+
+    font-size:22px;
+
+    margin:8px;
+
+    opacity:0;
+
+
+    animation:
+
+    textAppear 2s forwards;
+
+}
+
+
+
+.memory-text p:nth-child(2){
+
+    animation-delay:2s;
+
+}
+
+
+.memory-text p:nth-child(3){
+
+    animation-delay:4s;
+
+}
+
+
+
+
+
+/* TREAT */
+
+
+.treat{
+
+    margin-top:20px;
+
+}
+
+
+
+.treat img{
+
+    width:100px;
+
+    border-radius:20px;
+
+}
+
+
+
+.treat h3{
+
+    font-size:30px;
+
+    color:#ffd6e7;
+
+}
+
+
+
+
+
+/* BUTTON */
+
+
+#nextBirthday{
+
+    margin-top:20px;
+
+    padding:15px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ffb6d5;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+}
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes giftShake{
+
+
+0%,100%{
+
+transform:rotate(0);
+
+}
+
+
+25%{
+
+transform:rotate(-10deg);
+
+}
+
+
+75%{
+
+transform:rotate(10deg);
+
+}
+
+}
+
+
+
+@keyframes revealGift{
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+
+
+@keyframes textAppear{
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+
+
+@keyframes lightMove{
+
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-200px);
+
+}
+
+}
+
+
+
+@keyframes confettiFall{
+
+from{
+
+transform:translateY(-100px);
+
+}
+
+to{
+
+transform:translateY(300px);
+
+}
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+.birthday-scene h1{
+
+font-size:55px;
+
+}
+
+
+.birthday-scene h2{
+
+font-size:25px;
+
+}
+
+
+}
