@@ -54,6 +54,110 @@ body.photo-page{
     z-index:-2;
 
 }
+/* ===============================
+   PHOTO SCENE
+================================ */
+
+
+.photo-scene{
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+
+.photo-scene h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:75px;
+
+    color:#ffd6e7;
+
+    text-shadow:
+
+    0 0 30px pink;
+
+}
+
+
+
+.date{
+
+    font-size:20px;
+
+    margin:15px;
+
+    color:#ffe5f0;
+
+}
+
+
+
+
+
+/* ===============================
+      CAMERA
+================================ */
+
+
+.camera{
+
+    margin:20px;
+
+    animation:
+
+    cameraFloat 3s infinite;
+
+}
+
+
+
+.lens{
+
+    font-size:80px;
+
+}
+
+
+
+.camera p{
+
+    font-size:18px;
+
+    opacity:.8;
+
+}
+
+
+
+
+
+/* ===============================
+      POLAROID
+================================ */
+
+
+.polaroid{
+
+    padding:20px;
+
+    background:white;
+
+    width:280px;
+
+    color:#333
 
 
 
