@@ -1,0 +1,411 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   SONGS CINEMATIC STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+body.songs-page{
+
+    height:100vh;
+
+    overflow:hidden;
+
+    background:#080010;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+
+
+/* BACKGROUND */
+
+
+.songs-background{
+
+    position:fixed;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.85)
+    ),
+
+    radial-gradient(
+    circle,
+    #71345f,
+    #080010
+    );
+
+
+    z-index:-2;
+
+}
+
+
+
+
+
+.vinyl{
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+
+    background:
+
+    radial-gradient(
+    circle,
+    #111 10%,
+    #222 12%,
+    #111 40%,
+    #000 60%
+    );
+
+
+    right:10%;
+
+    top:20%;
+
+
+    animation:
+
+    rotateVinyl 8s linear infinite;
+
+
+    opacity:.4;
+
+}
+
+
+
+
+.music-notes{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background-image:
+
+    radial-gradient(
+    white 2px,
+    transparent 3px
+    );
+
+
+    background-size:90px 90px;
+
+
+    animation:
+
+    noteMove 15s linear infinite;
+
+}
+
+
+
+
+
+/* SCENE */
+
+
+.songs-scene{
+
+
+    height:100vh;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+}
+
+
+
+
+.songs-scene h1{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:80px;
+
+
+    color:#ffd6e7;
+
+
+}
+
+
+
+
+
+.subtitle{
+
+    font-size:22px;
+
+    margin:20px;
+
+}
+
+
+
+
+
+/* MUSIC CARDS */
+
+
+.music-card{
+
+
+    width:330px;
+
+
+    padding:25px;
+
+
+    margin:12px;
+
+
+    background:
+
+    rgba(255,255,255,.12);
+
+
+    backdrop-filter:blur(12px);
+
+
+    border-radius:25px;
+
+
+    animation:
+
+    cardGlow 3s infinite;
+
+
+}
+
+
+
+
+.album{
+
+
+    font-size:80px;
+
+
+}
+
+
+
+
+
+.music-card h2{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:45px;
+
+
+    color:#ffd6e7;
+
+
+}
+
+
+
+
+
+.music-card p{
+
+
+    margin:10px;
+
+}
+
+
+
+
+.playBtn{
+
+
+    padding:12px 30px;
+
+
+    border:none;
+
+
+    border-radius:30px;
+
+
+    background:#ffb6d5;
+
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+.love-line{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:40px;
+
+
+    margin:20px;
+
+
+}
+
+
+
+
+
+#nextSongs{
+
+
+    padding:15px 45px;
+
+
+    border:none;
+
+
+    border-radius:40px;
+
+
+    background:#ffb6d5;
+
+
+    cursor:pointer;
+
+
+    font-size:17px;
+
+}
+
+
+
+
+
+
+
+/* ANIMATION */
+
+
+@keyframes rotateVinyl{
+
+
+from{
+
+transform:rotate(0);
+
+}
+
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+
+
+
+@keyframes noteMove{
+
+
+from{
+
+transform:translateY(0);
+
+}
+
+
+to{
+
+transform:translateY(-200px);
+
+}
+
+}
+
+
+
+@keyframes cardGlow{
+
+
+50%{
+
+box-shadow:
+
+0 0 40px pink;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.songs-scene h1{
+
+font-size:55px;
+
+}
+
+
+.music-card{
+
+width:280px;
+
+}
+
+
+}
