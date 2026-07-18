@@ -1,0 +1,422 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   HOLDING HANDS CINEMATIC STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body.hands-page{
+
+    height:100vh;
+
+    overflow:hidden;
+
+    background:#090012;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+
+
+/* BACKGROUND */
+
+
+.hands-background{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.85)
+    ),
+
+    radial-gradient(
+    circle at bottom,
+    #7d355b,
+    #090012
+    );
+
+
+    z-index:-2;
+
+}
+
+
+
+.street-light{
+
+    position:absolute;
+
+    top:0;
+
+    left:50%;
+
+    width:200px;
+
+    height:100%;
+
+
+    background:
+
+    linear-gradient(
+    transparent,
+    rgba(255,220,160,.4)
+    );
+
+
+    filter:blur(30px);
+
+}
+
+
+
+
+
+.petals{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background-image:
+
+    radial-gradient(
+    pink 2px,
+    transparent 3px
+    );
+
+
+    background-size:90px 90px;
+
+
+    animation:
+
+    petalsMove 15s linear infinite;
+
+}
+
+
+
+
+
+
+/* SCENE */
+
+
+.hands-scene{
+
+
+    height:100vh;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.hands-scene h1{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:75px;
+
+
+    color:#ffd6e7;
+
+
+}
+
+
+
+.subtitle{
+
+    font-size:22px;
+
+    margin:15px;
+
+}
+
+
+
+
+
+
+
+/* COUPLE HANDS */
+
+
+.couple img{
+
+
+    width:320px;
+
+
+    filter:
+
+    drop-shadow(
+    0 0 40px pink
+    );
+
+
+    animation:
+
+    handFloat 3s infinite ease-in-out;
+
+
+}
+
+
+
+
+
+
+/* MEMORY */
+
+
+.memory p{
+
+
+    font-size:28px;
+
+
+    margin:10px;
+
+
+    opacity:0;
+
+
+    animation:
+
+    memoryShow 2s forwards;
+
+
+}
+
+
+
+.memory p:nth-child(2){
+
+animation-delay:2s;
+
+}
+
+
+.memory p:nth-child(3){
+
+animation-delay:4s;
+
+}
+
+
+
+
+
+
+/* GIFTS */
+
+
+.gift-memory{
+
+
+    display:flex;
+
+
+    gap:40px;
+
+
+    align-items:center;
+
+
+    margin:25px;
+
+
+}
+
+
+
+.rose,
+.chocolate{
+
+
+    font-size:60px;
+
+
+    animation:
+
+    giftBounce 2s infinite;
+
+
+}
+
+
+
+
+.gift-memory p{
+
+
+    font-size:18px;
+
+
+    color:#ffe5f0;
+
+
+}
+
+
+
+
+
+/* BUTTON */
+
+
+#nextHands{
+
+
+    padding:15px 45px;
+
+
+    border:none;
+
+
+    border-radius:40px;
+
+
+    background:#ffb6d5;
+
+
+    cursor:pointer;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes handFloat{
+
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+}
+
+
+
+@keyframes memoryShow{
+
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+
+
+@keyframes giftBounce{
+
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+
+
+@keyframes petalsMove{
+
+
+from{
+
+transform:translateY(0);
+
+}
+
+
+to{
+
+transform:translateY(-200px);
+
+}
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+.hands-scene h1{
+
+font-size:55px;
+
+}
+
+
+
+.couple img{
+
+width:220px;
+
+}
+
+
+
+.memory p{
+
+font-size:20px;
+
+}
+
+
+}
