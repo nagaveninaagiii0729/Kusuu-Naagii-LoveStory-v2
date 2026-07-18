@@ -1,0 +1,426 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   FIRST KISS CINEMATIC STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+body.kiss-page{
+
+    height:100vh;
+
+    overflow:hidden;
+
+    background:#05000b;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+
+
+/* ===============================
+      BACKGROUND
+================================ */
+
+
+.kiss-background{
+
+    position:fixed;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.85)
+    ),
+
+    radial-gradient(
+    circle at top,
+    #54204d,
+    #05000b
+    );
+
+
+    z-index:-2;
+
+}
+
+
+
+.stars{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background-image:
+
+    radial-gradient(
+    white 1px,
+    transparent 1px
+    );
+
+
+    background-size:80px 80px;
+
+
+    animation:
+
+    starsFloat 20s linear infinite;
+
+}
+
+
+
+
+
+.moon{
+
+    position:absolute;
+
+
+    top:80px;
+
+    right:15%;
+
+
+    width:150px;
+
+    height:150px;
+
+
+    background:#fff1d6;
+
+
+    border-radius:50%;
+
+
+    box-shadow:
+
+    0 0 80px #ffd6e7;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      SCENE
+================================ */
+
+
+.kiss-scene{
+
+
+    height:100vh;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    flex-direction:column;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+.kiss-scene h1{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:80px;
+
+
+    color:#ffd6e7;
+
+
+}
+
+
+
+
+.subtitle{
+
+    font-size:22px;
+
+    margin:15px;
+
+}
+
+
+
+
+
+
+
+/* PARK */
+
+
+.park{
+
+
+    font-size:80px;
+
+
+    letter-spacing:30px;
+
+
+    animation:
+
+    treeMove 4s infinite;
+
+}
+
+
+
+
+
+
+/* WALK */
+
+
+.walk{
+
+
+    margin:20px;
+
+}
+
+
+
+.step{
+
+
+    font-size:70px;
+
+
+    animation:
+
+    walkMove 2s infinite;
+
+}
+
+
+
+.walk p{
+
+    font-size:25px;
+
+}
+
+
+
+
+
+
+
+/* MOMENT */
+
+
+.moment h2{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:65px;
+
+
+    color:#ffb6d5;
+
+
+}
+
+
+
+.moment p{
+
+
+    font-size:25px;
+
+
+    max-width:600px;
+
+}
+
+
+
+
+
+
+/* HEART */
+
+
+.heart-lock{
+
+
+    font-size:100px;
+
+
+    animation:
+
+    heartBeat 1.5s infinite;
+
+}
+
+
+
+
+
+
+
+/* BUTTON */
+
+
+#nextKiss{
+
+
+    margin-top:25px;
+
+
+    padding:16px 45px;
+
+
+    border:none;
+
+
+    border-radius:50px;
+
+
+    background:#ffb6d5;
+
+
+    cursor:pointer;
+
+
+    font-size:17px;
+
+}
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes heartBeat{
+
+
+50%{
+
+transform:scale(1.25);
+
+}
+
+}
+
+
+
+@keyframes walkMove{
+
+
+50%{
+
+transform:translateX(20px);
+
+}
+
+}
+
+
+
+@keyframes treeMove{
+
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+
+
+@keyframes starsFloat{
+
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-200px);
+
+}
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.kiss-scene h1{
+
+font-size:55px;
+
+}
+
+
+.moon{
+
+width:100px;
+
+height:100px;
+
+}
+
+
+.moment h2{
+
+font-size:45px;
+
+}
+
+}
