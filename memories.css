@@ -1,0 +1,337 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   MEMORIES SCRAPBOOK STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body.memories-page{
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    background:#120018;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+
+
+/* BACKGROUND */
+
+
+.memory-background{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.85)
+    ),
+
+    radial-gradient(
+    circle at center,
+    #7a315e,
+    #120018
+    );
+
+    z-index:-2;
+
+}
+
+
+
+.floating-hearts{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+
+
+
+
+/* SCENE */
+
+
+.memory-scene{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+
+
+
+
+.memory-scene h1{
+
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:85px;
+
+    color:#ffd6e7;
+
+    text-shadow:
+
+    0 0 30px pink;
+
+
+}
+
+
+
+
+.subtitle{
+
+    font-size:22px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+
+/* CARDS */
+
+
+.memory-cards{
+
+
+    display:flex;
+
+    gap:25px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+
+
+.card{
+
+
+    width:250px;
+
+    min-height:220px;
+
+
+    padding:25px;
+
+
+    background:
+
+    rgba(255,255,255,.12);
+
+
+    border-radius:25px;
+
+
+    backdrop-filter:blur(10px);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.2);
+
+
+    transform:
+
+    rotate(-3deg);
+
+
+    transition:.5s;
+
+
+    animation:
+
+    cardFloat 4s infinite;
+
+}
+
+
+
+
+
+.card:nth-child(even){
+
+    transform:
+
+    rotate(3deg);
+
+}
+
+
+
+.card:hover{
+
+
+    transform:
+
+    scale(1.1)
+    rotate(0);
+
+
+    box-shadow:
+
+    0 0 40px pink;
+
+
+}
+
+
+
+
+.emoji{
+
+
+    font-size:60px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.card h2{
+
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:40px;
+
+    color:#ffd6e7;
+
+
+}
+
+
+
+.card p{
+
+
+    margin-top:15px;
+
+    font-size:16px;
+
+    line-height:1.5;
+
+
+}
+
+
+
+
+
+/* BUTTON */
+
+
+#nextMemories{
+
+
+    margin-top:30px;
+
+
+    padding:16px 45px;
+
+
+    border:none;
+
+
+    border-radius:50px;
+
+
+    background:#ffb6d5;
+
+
+    color:#351020;
+
+
+    font-size:17px;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes cardFloat{
+
+
+50%{
+
+transform:
+
+translateY(-15px)
+rotate(-3deg);
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.memory-scene h1{
+
+font-size:55px;
+
+}
+
+
+.card{
+
+width:280px;
+
+}
+
+
+}
