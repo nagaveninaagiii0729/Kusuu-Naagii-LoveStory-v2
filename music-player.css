@@ -1,0 +1,209 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   MUSIC PLAYER STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+body{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    background:
+
+    radial-gradient(
+    circle,
+    #8b315f,
+    #080010
+    );
+
+
+    font-family:'Poppins',sans-serif;
+
+    color:white;
+
+}
+
+
+
+
+
+.music-box{
+
+
+    width:350px;
+
+
+    padding:35px;
+
+
+    text-align:center;
+
+
+    border-radius:30px;
+
+
+    background:
+
+    rgba(255,255,255,.12);
+
+
+    backdrop-filter:blur(15px);
+
+
+    box-shadow:
+
+    0 0 50px pink;
+
+
+}
+
+
+
+
+
+
+.music-box h1{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:55px;
+
+
+    color:#ffd6e7;
+
+
+}
+
+
+
+
+
+
+
+.music-box img{
+
+
+    width:200px;
+
+
+    height:200px;
+
+
+    border-radius:50%;
+
+
+    object-fit:cover;
+
+
+    margin:25px;
+
+
+    animation:
+
+    rotate 8s linear infinite;
+
+
+}
+
+
+
+
+
+.music-box h2{
+
+
+    color:#ffb6d5;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+
+.controls button{
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    border:none;
+
+
+    border-radius:50%;
+
+
+    margin:10px;
+
+
+    background:#ffb6d5;
+
+
+    font-size:25px;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+.controls button:hover{
+
+
+    transform:scale(1.15);
+
+
+}
+
+
+
+
+
+
+
+@keyframes rotate{
+
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
