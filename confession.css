@@ -1,0 +1,504 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   CONFESSION CINEMATIC STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body.confession-page{
+
+    height:100vh;
+    overflow:hidden;
+    font-family:'Poppins',sans-serif;
+    color:white;
+    background:#090014;
+
+}
+
+
+
+
+
+/* =========================
+   BACKGROUND
+========================= */
+
+
+.night-background{
+
+    position:fixed;
+    inset:0;
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.9)
+    ),
+
+    radial-gradient(
+    circle at top,
+    #54215f,
+    #090014
+    );
+
+    z-index:-2;
+
+}
+
+
+
+.rain{
+
+    position:absolute;
+    inset:0;
+
+    background-image:
+
+    linear-gradient(
+    transparent,
+    rgba(255,255,255,.2)
+    );
+
+    animation:rainMove 1s linear infinite;
+
+}
+
+
+
+
+
+/* =========================
+   SCENE
+========================= */
+
+
+.confession-scene{
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+
+
+
+.confession-scene h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:70px;
+
+    color:#ffd6e7;
+
+}
+
+
+
+.subtitle{
+
+    margin:15px;
+
+    font-size:20px;
+
+    opacity:.8;
+
+}
+
+
+
+
+
+/* =========================
+      PHONE
+========================= */
+
+
+.phone{
+
+    width:330px;
+
+    height:560px;
+
+    background:#111;
+
+    border-radius:40px;
+
+    border:8px solid #333;
+
+    box-shadow:
+
+    0 0 60px rgba(255,150,200,.5);
+
+    overflow:hidden;
+
+    animation:
+
+    phoneAppear 2s ease;
+
+}
+
+
+
+.phone-top{
+
+    height:35px;
+
+    background:#111;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+.camera{
+
+    width:80px;
+
+    height:20px;
+
+    background:#000;
+
+    border-radius:20px;
+
+}
+
+
+
+
+/* =========================
+      INSTAGRAM HEADER
+========================= */
+
+
+.instagram-header{
+
+    height:60px;
+
+    background:#1b1b1b;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:10px;
+
+}
+
+
+
+.instagram-header img{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+
+
+/* =========================
+      CHAT
+========================= */
+
+
+.chat-area{
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+
+.message{
+
+    padding:12px 18px;
+
+    border-radius:20px;
+
+    max-width:80%;
+
+    opacity:0;
+
+    animation:
+
+    messageShow 1s forwards;
+
+}
+
+
+
+
+.received{
+
+    background:#2c2c2c;
+
+    align-self:flex-start;
+
+}
+
+
+
+.sent{
+
+    background:#e1306c;
+
+    align-self:flex-end;
+
+}
+
+
+
+.love-message{
+
+    animation-delay:3s;
+
+    box-shadow:
+
+    0 0 20px #ff8fc4;
+
+}
+
+
+
+.message:nth-child(1){
+
+animation-delay:1s;
+
+}
+
+
+.message:nth-child(2){
+
+animation-delay:2s;
+
+}
+
+
+
+.message:nth-child(5){
+
+animation-delay:5s;
+
+}
+
+
+
+.message:nth-child(6){
+
+animation-delay:6s;
+
+}
+
+
+
+
+.typing{
+
+    color:#aaa;
+
+    font-size:14px;
+
+    animation:
+
+    typing 2s infinite;
+
+}
+
+
+
+
+
+/* =========================
+      EMOTION
+========================= */
+
+
+.emotion{
+
+    margin-top:30px;
+
+}
+
+
+
+.emotion p{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:40px;
+
+    color:#ffd6e7;
+
+}
+
+
+
+
+
+/* BUTTON */
+
+#continueBtn{
+
+    margin-top:25px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#ff9fcf;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+}
+
+
+
+
+
+/* =========================
+      ANIMATIONS
+========================= */
+
+
+@keyframes messageShow{
+
+    from{
+
+    opacity:0;
+    transform:translateY(30px);
+
+    }
+
+
+    to{
+
+    opacity:1;
+    transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes phoneAppear{
+
+from{
+
+opacity:0;
+
+transform:scale(.5);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+
+
+@keyframes typing{
+
+50%{
+
+opacity:.3;
+
+}
+
+}
+
+
+
+@keyframes rainMove{
+
+from{
+
+transform:translateY(-100px);
+
+}
+
+
+to{
+
+transform:translateY(100px);
+
+}
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.confession-scene h1{
+
+font-size:50px;
+
+}
+
+
+.phone{
+
+width:300px;
+
+height:520px;
+
+}
+
+
+.emotion p{
+
+font-size:30px;
+
+}
+
+
+}
