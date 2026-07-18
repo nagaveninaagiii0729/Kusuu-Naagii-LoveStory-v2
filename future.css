@@ -1,0 +1,414 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   FUTURE FOREVER STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body.future-page{
+
+    height:100vh;
+
+    overflow:hidden;
+
+    background:#080010;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+
+
+/* BACKGROUND */
+
+
+.future-bg{
+
+    position:fixed;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.9)
+    ),
+
+    radial-gradient(
+    circle,
+    #642755,
+    #080010
+    );
+
+
+    z-index:-2;
+
+}
+
+
+
+
+.stars{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background-image:
+
+    radial-gradient(
+    white 1px,
+    transparent 2px
+    );
+
+
+    background-size:90px 90px;
+
+
+    animation:
+
+    starMove 20s linear infinite;
+
+}
+
+
+
+
+
+
+/* SCENE */
+
+
+.future-scene{
+
+
+    height:100vh;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.future-scene h1{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:90px;
+
+
+    color:#ffd6e7;
+
+
+    text-shadow:
+
+    0 0 40px pink;
+
+
+}
+
+
+
+
+
+.subtitle{
+
+
+    font-size:22px;
+
+    margin:20px;
+
+
+}
+
+
+
+
+
+
+
+/* DREAM CARDS */
+
+
+.dream-cards{
+
+
+    display:flex;
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+.dream{
+
+
+    width:220px;
+
+
+    padding:25px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    rgba(255,255,255,.12);
+
+
+    backdrop-filter:blur(10px);
+
+
+    animation:
+
+    dreamFloat 3s infinite;
+
+
+}
+
+
+
+.dream:nth-child(2){
+
+animation-delay:1s;
+
+}
+
+
+
+.dream:nth-child(3){
+
+animation-delay:2s;
+
+}
+
+
+
+
+.dream{
+
+    font-size:55px;
+
+}
+
+
+
+.dream h2{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:40px;
+
+
+    color:#ffb6d5;
+
+
+}
+
+
+
+.dream p{
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+
+
+/* FOREVER */
+
+
+.forever{
+
+
+    font-size:130px;
+
+
+    color:#ffb6d5;
+
+
+    text-shadow:
+
+    0 0 50px pink;
+
+
+    animation:
+
+    infinityGlow 2s infinite;
+
+
+}
+
+
+
+
+
+.promise{
+
+
+    font-size:28px;
+
+
+    color:#ffe5f0;
+
+
+}
+
+
+
+
+
+/* BUTTON */
+
+
+#nextFuture{
+
+
+    margin-top:25px;
+
+
+    padding:16px 50px;
+
+
+    border:none;
+
+
+    border-radius:50px;
+
+
+    background:#ffb6d5;
+
+
+    cursor:pointer;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+
+
+
+/* ANIMATION */
+
+
+@keyframes dreamFloat{
+
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+}
+
+
+
+@keyframes infinityGlow{
+
+
+50%{
+
+transform:scale(1.15);
+
+}
+
+}
+
+
+
+@keyframes starMove{
+
+
+from{
+
+transform:translateY(0);
+
+}
+
+
+to{
+
+transform:translateY(-200px);
+
+}
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+.future-scene h1{
+
+font-size:55px;
+
+}
+
+
+
+.dream-cards{
+
+flex-direction:column;
+
+}
+
+
+
+.dream{
+
+width:280px;
+
+}
+
+}
