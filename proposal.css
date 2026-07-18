@@ -1,0 +1,475 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   PROPOSAL CINEMATIC STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body.proposal-page{
+
+    height:100vh;
+
+    overflow:hidden;
+
+    background:#05000d;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+
+
+/* ===============================
+      BACKGROUND
+================================ */
+
+
+.proposal-background{
+
+    position:fixed;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.85)
+    ),
+
+    radial-gradient(
+    circle at center,
+    #642652,
+    #05000d
+    );
+
+
+    z-index:-2;
+
+}
+
+
+
+
+
+.stars{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background-image:
+
+    radial-gradient(
+    white 1px,
+    transparent 1px
+    );
+
+
+    background-size:80px 80px;
+
+
+    animation:
+
+    starMove 20s linear infinite;
+
+}
+
+
+
+
+.lights{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+
+    background:
+
+    radial-gradient(
+    circle,
+    rgba(255,210,150,.5),
+    transparent 40%
+    );
+
+
+    animation:
+
+    lightGlow 4s infinite;
+
+}
+
+
+
+
+
+
+/* ===============================
+      SCENE
+================================ */
+
+
+.proposal-scene{
+
+
+    height:100vh;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.proposal-scene h1{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:80px;
+
+
+    color:#ffd6e7;
+
+
+}
+
+
+
+
+.subtitle{
+
+
+    font-size:22px;
+
+
+    margin:15px;
+
+
+}
+
+
+
+
+
+.place{
+
+
+    font-size:25px;
+
+
+    margin:20px;
+
+
+    color:#ffe5f0;
+
+
+}
+
+
+
+
+
+
+/* ===============================
+      RING
+================================ */
+
+
+.ring-box{
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.ring{
+
+
+    font-size:120px;
+
+
+    animation:
+
+
+    ringFloat 2s infinite;
+
+
+    filter:
+
+
+    drop-shadow(
+    0 0 30px gold
+    );
+
+
+}
+
+
+
+.ring-box p{
+
+
+    font-size:20px;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      PROPOSAL MOMENT
+================================ */
+
+
+.proposal-moment{
+
+
+    margin:20px;
+
+
+}
+
+
+
+.proposal-moment h2{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:70px;
+
+
+    color:#ffb6d5;
+
+
+}
+
+
+
+.proposal-moment p{
+
+
+    font-size:35px;
+
+
+}
+
+
+
+
+
+
+/* ===============================
+      MEMORIES
+================================ */
+
+
+.memories{
+
+
+    display:flex;
+
+
+    gap:50px;
+
+
+}
+
+
+
+.memories div{
+
+
+    font-size:45px;
+
+
+    animation:
+
+
+    memoryFloat 3s infinite;
+
+
+}
+
+
+
+.memories p{
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+
+/* BUTTON */
+
+
+#nextProposal{
+
+
+    margin-top:25px;
+
+
+    padding:16px 45px;
+
+
+    border:none;
+
+
+    border-radius:50px;
+
+
+    background:#ffb6d5;
+
+
+    cursor:pointer;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+      ANIMATIONS
+================================ */
+
+
+@keyframes ringFloat{
+
+
+50%{
+
+transform:translateY(-20px)
+scale(1.1);
+
+}
+
+}
+
+
+
+@keyframes memoryFloat{
+
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+
+
+@keyframes starMove{
+
+
+from{
+
+transform:translateY(0);
+
+}
+
+
+to{
+
+transform:translateY(-200px);
+
+}
+
+}
+
+
+
+@keyframes lightGlow{
+
+
+50%{
+
+opacity:.5;
+
+}
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.proposal-scene h1{
+
+font-size:55px;
+
+}
+
+
+.proposal-moment h2{
+
+font-size:50px;
+
+}
+
+
+.memories{
+
+gap:20px;
+
+}
+
+
+}
