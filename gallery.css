@@ -1,0 +1,378 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   LOVE GALLERY STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+body.gallery-page{
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    background:#0d0015;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+
+
+/* BACKGROUND */
+
+
+.gallery-bg{
+
+    position:fixed;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.4),
+    rgba(0,0,0,.85)
+    ),
+
+    radial-gradient(
+    circle,
+    #70325c,
+    #0d0015
+    );
+
+
+    z-index:-2;
+
+}
+
+
+
+.sparkles{
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background-image:
+
+    radial-gradient(
+    white 2px,
+    transparent 3px
+    );
+
+
+    background-size:90px 90px;
+
+
+    animation:
+
+    sparkleMove 15s linear infinite;
+
+}
+
+
+
+
+
+
+
+/* SCENE */
+
+
+.gallery-scene{
+
+
+    height:100vh;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.gallery-scene h1{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:85px;
+
+
+    color:#ffd6e7;
+
+
+}
+
+
+
+.subtitle{
+
+
+    font-size:22px;
+
+    margin:15px;
+
+}
+
+
+
+
+
+
+/* WALL */
+
+
+.gallery-wall{
+
+
+    display:flex;
+
+
+    flex-wrap:wrap;
+
+
+    justify-content:center;
+
+
+    gap:25px;
+
+
+    width:90%;
+
+
+}
+
+
+
+
+
+
+/* PHOTO CARDS */
+
+
+.photo-card{
+
+
+    width:180px;
+
+
+    padding:12px;
+
+
+    background:white;
+
+
+    color:#333;
+
+
+    transform:
+
+    rotate(-5deg);
+
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.5);
+
+
+    animation:
+
+    cardFloat 4s infinite;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+
+.photo-card:nth-child(even){
+
+    transform:
+
+    rotate(5deg);
+
+}
+
+
+
+.photo-card:hover{
+
+
+    transform:
+
+    scale(1.15)
+    rotate(0);
+
+
+    z-index:5;
+
+
+}
+
+
+
+.photo-card img{
+
+
+    width:100%;
+
+
+    height:150px;
+
+
+    object-fit:cover;
+
+
+}
+
+
+
+.photo-card p{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:28px;
+
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+
+
+/* BUTTON */
+
+
+#nextGallery{
+
+
+    margin-top:25px;
+
+
+    padding:15px 45px;
+
+
+    border:none;
+
+
+    border-radius:40px;
+
+
+    background:#ffb6d5;
+
+
+    cursor:pointer;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+
+
+
+/* ANIMATION */
+
+
+@keyframes cardFloat{
+
+
+50%{
+
+transform:
+
+translateY(-15px)
+rotate(-5deg);
+
+}
+
+}
+
+
+
+@keyframes sparkleMove{
+
+
+from{
+
+transform:translateY(0);
+
+}
+
+
+to{
+
+transform:translateY(-200px);
+
+}
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+.gallery-scene h1{
+
+font-size:55px;
+
+}
+
+
+.gallery-wall{
+
+overflow-y:auto;
+
+height:400px;
+
+}
+
+
+}
