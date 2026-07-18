@@ -1,0 +1,319 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   VIDEO MEMORIES STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body.video-page{
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    background:#090011;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+
+
+/* BACKGROUND */
+
+
+.video-bg{
+
+    position:fixed;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.9)
+    ),
+
+    radial-gradient(
+    circle,
+    #702c58,
+    #090011
+    );
+
+
+    z-index:-1;
+
+}
+
+
+
+.particles{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background-image:
+
+    radial-gradient(
+    white 2px,
+    transparent 3px
+    );
+
+
+    background-size:80px 80px;
+
+
+    animation:
+
+    particleMove 15s linear infinite;
+
+}
+
+
+
+
+
+
+
+/* CONTENT */
+
+
+.video-scene{
+
+
+    padding:40px 20px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.video-scene h1{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:80px;
+
+
+    color:#ffd6e7;
+
+
+    text-shadow:
+
+    0 0 40px pink;
+
+
+}
+
+
+
+
+.video-scene>p{
+
+
+    font-size:22px;
+
+
+    margin:20px;
+
+
+}
+
+
+
+
+
+
+
+/* VIDEO CARDS */
+
+
+.video-box{
+
+
+    width:600px;
+
+
+    max-width:90%;
+
+
+    margin:30px auto;
+
+
+    padding:20px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    rgba(255,255,255,.12);
+
+
+    backdrop-filter:blur(12px);
+
+
+    box-shadow:
+
+    0 0 30px rgba(255,182,213,.4);
+
+
+    animation:
+
+    videoFloat 4s infinite;
+
+}
+
+
+
+
+
+.video-box video{
+
+
+    width:100%;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+.video-box h2{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:45px;
+
+
+    color:#ffb6d5;
+
+
+    margin-top:15px;
+
+
+}
+
+
+
+
+
+
+/* BUTTON */
+
+
+#backStory{
+
+
+    margin:30px;
+
+
+    padding:16px 45px;
+
+
+    border:none;
+
+
+    border-radius:50px;
+
+
+    background:#ffb6d5;
+
+
+    cursor:pointer;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+
+
+
+
+/* ANIMATION */
+
+
+@keyframes videoFloat{
+
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+
+
+@keyframes particleMove{
+
+
+from{
+
+transform:translateY(0);
+
+}
+
+
+to{
+
+transform:translateY(-200px);
+
+}
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.video-scene h1{
+
+font-size:55px;
+
+}
+
+
+
+.video-box h2{
+
+font-size:35px;
+
+}
+
+
+}
