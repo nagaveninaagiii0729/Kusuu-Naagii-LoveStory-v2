@@ -1,0 +1,344 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   LOVE LETTER STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body.letter-page{
+
+    height:100vh;
+
+    overflow:hidden;
+
+    background:#0b0012;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+
+
+/* BACKGROUND */
+
+
+.letter-background{
+
+    position:fixed;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.4),
+    rgba(0,0,0,.85)
+    ),
+
+    radial-gradient(
+    circle,
+    #6b2b55,
+    #0b0012
+    );
+
+
+    z-index:-2;
+
+}
+
+
+
+.stars{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background-image:
+
+    radial-gradient(
+    white 1px,
+    transparent 2px
+    );
+
+
+    background-size:80px 80px;
+
+
+    animation:
+
+    starMove 20s linear infinite;
+
+}
+
+
+
+
+
+/* SCENE */
+
+
+.letter-scene{
+
+
+    height:100vh;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.letter-scene h1{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:85px;
+
+
+    color:#ffd6e7;
+
+
+    text-shadow:
+
+    0 0 30px pink;
+
+
+}
+
+
+
+
+
+
+/* PAPER */
+
+
+.paper{
+
+
+    width:500px;
+
+
+    padding:40px;
+
+
+    margin:20px;
+
+
+    background:#fff7ef;
+
+
+    color:#5b263d;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.5);
+
+
+    transform:
+
+    rotate(-2deg);
+
+
+    animation:
+
+    paperOpen 2s ease;
+
+
+}
+
+
+
+
+
+.paper h2{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:55px;
+
+
+}
+
+
+
+
+
+.paper p{
+
+
+    font-size:18px;
+
+
+    line-height:1.8;
+
+
+    margin:15px;
+
+
+}
+
+
+
+
+
+.final-line{
+
+
+    font-family:'Great Vibes',cursive;
+
+
+    font-size:35px !important;
+
+
+}
+
+
+
+
+
+
+
+/* BUTTON */
+
+
+#nextLetter{
+
+
+    padding:16px 45px;
+
+
+    border:none;
+
+
+    border-radius:50px;
+
+
+    background:#ffb6d5;
+
+
+    cursor:pointer;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+
+
+
+
+/* ANIMATION */
+
+
+@keyframes paperOpen{
+
+
+from{
+
+opacity:0;
+
+transform:
+
+scale(.5)
+rotate(-10deg);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+
+scale(1)
+rotate(-2deg);
+
+}
+
+}
+
+
+
+@keyframes starMove{
+
+
+from{
+
+transform:translateY(0);
+
+}
+
+
+to{
+
+transform:translateY(-200px);
+
+}
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.letter-scene h1{
+
+font-size:55px;
+
+}
+
+
+
+.paper{
+
+width:90%;
+
+padding:25px;
+
+}
+
+
+}
