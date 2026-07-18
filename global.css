@@ -1,0 +1,200 @@
+/* =====================================
+   KUSUU ❤️ NAAGII
+   GLOBAL PREMIUM STYLE
+===================================== */
+
+
+/* GOOGLE FONT SUPPORT */
+
+body{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+
+
+/* SMOOTH PAGE TRANSITION */
+
+
+body{
+
+    animation:
+
+    pageEnter 1.5s ease;
+
+}
+
+
+
+
+
+@keyframes pageEnter{
+
+
+from{
+
+opacity:0;
+
+}
+
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+
+
+
+
+
+
+/* CUSTOM SCROLLBAR */
+
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+
+
+::-webkit-scrollbar-track{
+
+background:#100012;
+
+}
+
+
+
+::-webkit-scrollbar-thumb{
+
+background:#ffb6d5;
+
+border-radius:20px;
+
+}
+
+
+
+
+
+
+
+/* HEART CURSOR EFFECT */
+
+
+.love-cursor{
+
+
+position:fixed;
+
+
+pointer-events:none;
+
+
+font-size:20px;
+
+
+animation:
+
+cursorHeart 1s forwards;
+
+
+z-index:9999;
+
+
+}
+
+
+
+
+
+@keyframes cursorHeart{
+
+
+from{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+
+to{
+
+transform:
+
+translateY(-50px)
+scale(1.8);
+
+opacity:0;
+
+}
+
+}
+
+
+
+
+
+
+
+/* COMMON BUTTON */
+
+
+button{
+
+
+transition:.4s;
+
+
+}
+
+
+
+button:hover{
+
+
+transform:scale(1.08);
+
+
+box-shadow:
+
+0 0 25px pink;
+
+
+}
+
+
+
+
+
+
+
+/* MOBILE FIX */
+
+
+@media(max-width:768px){
+
+
+body{
+
+overflow-x:hidden;
+
+}
+
+
+}
